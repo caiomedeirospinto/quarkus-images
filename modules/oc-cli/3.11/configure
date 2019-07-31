@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+SOURCES_DIR=/tmp/artifacts
+
+tar xzf ${SOURCES_DIR}/openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz -C ${SOURCES_DIR}
+mv ${SOURCES_DIR}/openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit/oc /usr/bin/oc
+mv ${SOURCES_DIR}/openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit/kubectl /usr/bin/kubectl
+
+chmod +x /usr/bin/oc /usr/bin/kubectl
+
+rm -rf ${SOURCES_DIR}/openshift-origin-client-tools-${OC_VERSION}-linux-64bit* 

@@ -1,6 +1,6 @@
 schema_version: 1
 name: maven-config
-
+version: 1.0
 envs:
   - name: "HTTP_PROXY"
     description: "The location of the http proxy, will be used for both Maven builds and Java runtime."

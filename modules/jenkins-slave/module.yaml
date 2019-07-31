@@ -1,0 +1,21 @@
+schema_version: 1
+name: jenkins-slave
+version: 1.0
+packages:
+  install:
+  # - bc
+  - gettext
+  - git
+  - lsof
+  - rsync
+  - tar
+  - unzip
+  - which
+  - zip
+  - bzip2
+artifacts:
+- name: dumb-init_1.2.2_amd64
+  url: https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64
+  md5: 79f195aae73dda5424c9578918ca2623
+execute:
+- script: configure
